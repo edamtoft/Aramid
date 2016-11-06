@@ -4,6 +4,7 @@
     <!--*-->
     <id>$id$</id>
     <!--*-->
+    <version>1.0.0.4</version>
     <title>Aramid.Html</title>
     <!--*-->
     <authors>$author$</authors>
@@ -19,10 +20,12 @@
     <tags>
     </tags>
     <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System.Web" targetFramework="net45" />
     </frameworkAssemblies>
     <dependencies>
     </dependencies>
   </metadata>
   <files>
+    <file src="bin\Release\*.dll" target="net45" />
   </files>
 </package>
