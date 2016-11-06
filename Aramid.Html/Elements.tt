@@ -1,0 +1,23 @@
+﻿<#@ template debug="false" hostspecific="false" language="C#" #>
+<#@ assembly name="System.Core" #>
+<#@ assembly name="$(SolutionDir)/Aramid.Html/Bin/Debug/Aramid.dll" #>
+<#@ output extension=".cs" #>
+namespace Aramid.Html
+{
+<# foreach (var tag in Aramid.Html.HtmlUtils.AllTags) { #>
+  /// <summary>
+  /// HTML <#=tag #> Tag
+  /// </summary>
+  public class <#=tag #> : <#= Aramid.Html.HtmlUtils.IsVoid(tag) ? "HtmlVoidElement" : "HtmlElement" #>
+  {
+    public <#=tag #>(string className, object props) : base("<#=tag.ToUpper() #>", new[] { className }, props) { }
+
+    public <#=tag #>(string[] classes, object props) : base("<#=tag.ToUpper() #>", classes, props) { }
+
+    public <#=tag #>(params string[] classes) : base("<#=tag.ToUpper() #>", classes, null) { }
+
+    public <#=tag #>(object props) : base("<#=tag.ToUpper() #>", new string[0], props) { }
+  }
+
+<# } #>
+}
