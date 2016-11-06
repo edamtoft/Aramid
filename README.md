@@ -116,6 +116,13 @@ class BootstrapForm : HtmlComponent
 
 Check out the unit test project for more examples.
 
+## Install
+
+Install the Aramid NuGet Package
+
+```
+PM> Install-Package Aramid
+```
 
 ## Hard to Break
 Aramid is designed to be as much of a "Pit of Success" as possible, so the things you do the most often will be done right with the least amount of work or understanding of the system as possible. Strings are always HTML encoded, type definitions are designed make sure the compiler keeps your HTML valid, and dangerous things are hard to do. If you want to allow arbitraty HTML (and have sufficiently protected against XSS vulnerabilities, etc), you can use the UnsafeRawHtml elemnent.
