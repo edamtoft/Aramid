@@ -4,7 +4,6 @@
     <!--*-->
     <id>$id$</id>
     <!--*-->
-    <version>1.0.0.1</version>
     <title>Aramid.Html</title>
     <!--*-->
     <authors>$author$</authors>
@@ -19,10 +18,11 @@
     <copyright>$copyright$</copyright>
     <tags>
     </tags>
+    <frameworkAssemblies>
+    </frameworkAssemblies>
     <dependencies>
     </dependencies>
   </metadata>
   <files>
-    <file src="bin\Release\*.dll" target="lib" />
   </files>
 </package>

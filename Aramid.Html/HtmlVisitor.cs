@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Aramid.Html;
 
-namespace Aramid
+namespace Aramid.Html
 {
   public abstract class HtmlVisitor : IHtmlVisitor
   {
