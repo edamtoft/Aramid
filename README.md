@@ -1,8 +1,11 @@
 # Aramid
 Create Strongly-Typed HTML components in c#
 
+## Where
+There are a lot of times when HTML gets handled as a "Magic String", and times when you have to work with and create HTML outside of the ASP.NET context. This is designed as a micro view system for those situations. I'd be cautious about mixing and matching this with another view engine I.E. MVC/razor, though. The code doesn't make any assumptions about where it can or should be used, but having multiple concepts of a view within an application could lead to maintainability issues.
+
 ## Why
-The various flavors of ASP.NET allow for creating templated HTML through .cshtml partials and files, UserControls, etc, but creating components this way has a pretty high "cost" to modularize a collection of related HTML into a reusable format, and in the end, is mostly just string templates. This project was inspired by how React handles creating reusable components to build up scalable UIs. For example, you could create a FormInput component which would include the markup for labels, inputs, etc, and then create a LoginForm component which combined those smaller components together. Small components build up larger components, which eventually can build up whole pages. This keeps UI code DRY (Don't Repeat Yourself), and makes it easy to build up a library of components which are easy to manage and modify, since you get all the benefits of type-safety. For the previous example, if you wanted to make it so all of your forms across an entire project include a new attribute (I.E. autofill hints)? Just change the component. No more Find-and-replace across HTML files.
+This project was inspired by how React handles creating reusable components to build up scalable UIs. For example, you could create a FormInput component which would include the markup for labels, inputs, etc, and then create a LoginForm component which combined those smaller components together. Small components build up larger components, which eventually can build up whole UIs. This keeps UIs DRY (Don't Repeat Yourself), and makes it easy to build up a library of components which are easy to manage and modify, since you get all the benefits of type-safety. For the previous example, if you wanted to make it so all of your forms across an entire project include a new attribute (I.E. autofill hints), just change the component.
 
 
 ## Code
