@@ -138,5 +138,5 @@ Aramid fibers are a class of synthetic polymer fibers which are more commonly kn
 PRs totally welcome, and feel free to open an issue if you find a bug, or have an idea for a new feature.
 
 
-## Liscence
+## License
 This project is MIT licensed. See the LISCENCE file for details.
