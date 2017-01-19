@@ -139,4 +139,4 @@ PRs totally welcome, and feel free to open an issue if you find a bug, or have a
 
 
 ## License
-This project is MIT licensed. See the LISCENCE file for details.
+This project is MIT licensed. See the LICENSE file for details.
